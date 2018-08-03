@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
 //        CreationOperators.run();
         
         // Операторы преобразования
-        ConversionOperators.run();
+//        ConversionOperators.run();
+        
+        // Операторы фильтрации
+        FilteringOperators.run();
     }
 }
