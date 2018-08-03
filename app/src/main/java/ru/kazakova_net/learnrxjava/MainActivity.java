@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         
         // Операторы создания
-        CreationOperators.run();
+//        CreationOperators.run();
+        
+        // Операторы преобразования
+        ConversionOperators.run();
     }
 }

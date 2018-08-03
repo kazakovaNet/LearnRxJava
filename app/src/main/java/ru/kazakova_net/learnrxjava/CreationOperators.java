@@ -11,8 +11,11 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
+/**
+ * Операторы, с помощью которых вы можете создавать новые Observable или менять уже существующие.
+ */
 public class CreationOperators {
-    private static final String LOG_TAG = CreationOperators.class.getSimpleName();
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
     
     public static void run() {
         observeRange();
