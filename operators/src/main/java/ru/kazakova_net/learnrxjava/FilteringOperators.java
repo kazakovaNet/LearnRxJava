@@ -12,11 +12,13 @@ public class FilteringOperators {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     
     public static void run() {
-        take();
+//        take();
+
+//        skip();
+
+//        distinct();
         
-        skip();
-        
-        distinct();
+        filter();
     }
     
     /**
@@ -114,5 +116,16 @@ public class FilteringOperators {
         
         // subscribe
         observable.subscribe(observer);
+    }
+    
+    /**
+     * Оператор filter может отсеять только нужные элементы.
+     * Для этого необходимо создать функцию, в которой будет описан алгоритм фильтрации.
+     * Например, оставим только строки содержащие 5.
+     */
+    private static void filter() {
+        Observable.from(new String[]{"15", "27", "34", "46", "52", "63"})
+                .filter(number -> number.contains("5"))
+                .subscribe(number -> Log.d(LOG_TAG, number));
     }
 }

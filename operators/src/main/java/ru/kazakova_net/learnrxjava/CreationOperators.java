@@ -107,22 +107,6 @@ public class CreationOperators {
     }
     
     /**
-     * Метод longAction оборачивается в {@link Callable}
-     */
-    private static class CallableLongAction implements Callable<Integer> {
-        private final String data;
-        
-        CallableLongAction(String data) {
-            this.data = data;
-        }
-        
-        @Override
-        public Integer call() throws Exception {
-            return longAction(data);
-        }
-    }
-    
-    /**
      * Получившийся Observable запустит метод longAction и вернет вам результат в onNext
      */
     private static void fromCallable() {
@@ -135,5 +119,21 @@ public class CreationOperators {
                         Log.d(LOG_TAG, "onNext: " + integer);
                     }
                 });
+    }
+    
+    /**
+     * Метод longAction оборачивается в {@link Callable}
+     */
+    private static class CallableLongAction implements Callable<Integer> {
+        private final String data;
+
+        CallableLongAction(String data) {
+            this.data = data;
+        }
+
+        @Override
+        public Integer call() throws Exception {
+            return longAction(data);
+        }
     }
 }

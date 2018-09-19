@@ -18,6 +18,12 @@ public class MainActivity extends AppCompatActivity {
 //        ConversionOperators.run();
         
         // Операторы фильтрации
-        FilteringOperators.run();
+//        FilteringOperators.run();
+        
+        // Операторы объединения
+//        AggregationOperators.run();
+        
+        // Условные операторы
+        ConditionOperators.run();
     }
 }
