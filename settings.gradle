@@ -1,1 +1,1 @@
-include ':operators'
+include ':operators', ':subscription'
