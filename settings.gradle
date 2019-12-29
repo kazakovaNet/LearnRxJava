@@ -1,1 +1,1 @@
-include ':operators', ':subscription'
+include ':operators', ':subscription', ':hotandcoldobservable'

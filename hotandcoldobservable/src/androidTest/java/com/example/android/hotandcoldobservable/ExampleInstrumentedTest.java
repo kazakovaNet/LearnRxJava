@@ -1,4 +1,4 @@
-package com.example.android.subscription;
+package com.example.android.hotandcoldobservable;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
     
-        assertEquals("com.example.android.subscription", appContext.getPackageName());
+        assertEquals("com.example.android.hotandcoldobservable", appContext.getPackageName());
     }
 }
